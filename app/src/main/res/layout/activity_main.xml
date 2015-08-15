@@ -1,0 +1,33 @@
+<android.support.v4.widget.DrawerLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/mainContentLayout">
+            <include layout="@layout/mytoolbar_layout" android:id="@+id/toolBar"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mainContentFrame"
+                    ></FrameLayout>
+                <include layout="@layout/fab_layout" android:id="@+id/fab"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <fragment
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:name="com.example.iyad.materialdesign01_g2.NavigationDrawerFragment"
+            android:layout_gravity="start"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
