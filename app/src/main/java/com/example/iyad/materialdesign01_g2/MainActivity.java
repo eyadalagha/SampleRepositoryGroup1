@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawerF
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //
 
         final Toolbar toolbar = (Toolbar) this.findViewById(R.id.toolBar);
         this.setSupportActionBar(toolbar);
